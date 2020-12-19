@@ -1,0 +1,145 @@
+# dune build main.exe
+# OCAMLPARAM: unset
+# Workspace root: /home/zine-eddine/Bureau/OcamlEnv/pf5/projet
+$ /usr/bin/nproc > /tmp/duneeeff0b.output 2> /dev/null
+# Auto-detected concurrency: 1
+# disable binary cache
+$ /usr/bin/ocamlc.opt -config > /tmp/duned6c5fa.output
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dyn
+#  ; merlin = true
+#  ; for_host = None
+#  ; fdo_target_exe = None
+#  ; build_dir = "default"
+#  ; toplevel_path = None
+#  ; ocaml_bin = External "/usr/bin"
+#  ; ocaml = External "/usr/bin/ocaml"
+#  ; ocamlc = External "/usr/bin/ocamlc.opt"
+#  ; ocamlopt = Some External "/usr/bin/ocamlopt.opt"
+#  ; ocamldep = External "/usr/bin/ocamldep.opt"
+#  ; ocamlmklib = External "/usr/bin/ocamlmklib.opt"
+#  ;
+#  env =
+#    map
+#      {
+#      "CAML_LD_LIBRARY_PATH" :
+#        "/home/zine-eddine/Bureau/OcamlEnv/pf5/projet/_build/install/default/lib/stublibs"
+#      ; "DUNE_CONFIGURATOR" : "/usr/bin/ocamlc.opt"
+#      ; "INSIDE_DUNE" : "1"
+#      ;
+#      "MANPATH" :
+#        "/home/zine-eddine/Bureau/OcamlEnv/pf5/projet/_build/install/default/bin"
+#      ;
+#      "OCAMLFIND_IGNORE_DUPS_IN" :
+#        "/home/zine-eddine/Bureau/OcamlEnv/pf5/projet/_build/install/default/lib"
+#      ;
+#      "OCAMLPATH" :
+#        "/home/zine-eddine/Bureau/OcamlEnv/pf5/projet/_build/install/default/lib"
+#      ; "OCAML_COLOR" : "always"
+#      ; "OPAMCOLOR" : "always"
+#      }
+#  ; findlib_path = [ External "/usr/lib/ocaml" ]
+#  ; arch_sixtyfour = true
+#  ; natdynlink_supported = true
+#  ; supports_shared_libraries = true
+#  ; opam_vars = map {}
+#  ;
+#  ocaml_config =
+#    { version = "4.08.1"
+#    ; standard_library_default = "/usr/lib/ocaml"
+#    ; standard_library = "/usr/lib/ocaml"
+#    ; standard_runtime = "the_standard_runtime_variable_was_deleted"
+#    ; ccomp_type = "cc"
+#    ; c_compiler = "x86_64-linux-gnu-gcc"
+#    ; ocamlc_cflags = [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-fPIC" ]
+#    ; ocamlopt_cflags = [ "-O2"; "-fno-strict-aliasing"; "-fwrapv" ]
+#    ;
+#    bytecomp_c_compiler =
+#      [ "x86_64-linux-gnu-gcc"
+#      ; "-O2"
+#      ; "-fno-strict-aliasing"
+#      ; "-fwrapv"
+#      ; "-fPIC"
+#      ; "-D_FILE_OFFSET_BITS=64"
+#      ; "-D_REENTRANT"
+#      ]
+#    ; bytecomp_c_libraries = [ "-lm"; "-ldl"; "-lpthread" ]
+#    ;
+#    native_c_compiler =
+#      [ "x86_64-linux-gnu-gcc"
+#      ; "-O2"
+#      ; "-fno-strict-aliasing"
+#      ; "-fwrapv"
+#      ; "-D_FILE_OFFSET_BITS=64"
+#      ; "-D_REENTRANT"
+#      ]
+#    ; native_c_libraries = [ "-lm"; "-ldl" ]
+#    ; cc_profile = [ "-pg" ]
+#    ; architecture = "amd64"
+#    ; model = "default"
+#    ; int_size = 63
+#    ; word_size = 64
+#    ; system = "linux"
+#    ; asm = [ "x86_64-linux-gnu-as" ]
+#    ; asm_cfi_supported = true
+#    ; with_frame_pointers = false
+#    ; ext_exe = ""
+#    ; ext_obj = ".o"
+#    ; ext_asm = ".s"
+#    ; ext_lib = ".a"
+#    ; ext_dll = ".so"
+#    ; os_type = "Unix"
+#    ; default_executable_name = "a.out"
+#    ; systhread_supported = true
+#    ; host = "x86_64-pc-linux-gnu"
+#    ; target = "x86_64-pc-linux-gnu"
+#    ; profiling = true
+#    ; flambda = false
+#    ; spacetime = false
+#    ; safe_string = false
+#    ; exec_magic_number = "Caml1999X025"
+#    ; cmi_magic_number = "Caml1999I025"
+#    ; cmo_magic_number = "Caml1999O025"
+#    ; cma_magic_number = "Caml1999A025"
+#    ; cmx_magic_number = "Caml1999Y025"
+#    ; cmxa_magic_number = "Caml1999Z025"
+#    ; ast_impl_magic_number = "Caml1999M025"
+#    ; ast_intf_magic_number = "Caml1999N025"
+#    ; cmxs_magic_number = "Caml1999D025"
+#    ; cmt_magic_number = "Caml1999T025"
+#    ; natdynlink_supported = true
+#    ; supports_shared_libraries = true
+#    ; windows_unicode = false
+#    }
+#  ;
+#  which =
+#    map
+#      { "ocaml" : Some External "/usr/bin/ocaml"
+#      ; "ocamlc" : Some External "/usr/bin/ocamlc.opt"
+#      ; "ocamlobjinfo" : Some External "/usr/bin/ocamlobjinfo.opt"
+#      }
+#  }
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -bin-annot -I .lsystems.objs/byte -no-alias-deps -opaque -o .lsystems.objs/byte/lsystems.cmo -c -impl lsystems.ml-gen)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -I .lsystems.objs/byte -I .lsystems.objs/native -intf-suffix .ml-gen -no-alias-deps -opaque -o .lsystems.objs/native/lsystems.cmx -c -impl lsystems.ml-gen)
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl formes.ml) > _build/default/.lsystems.objs/formes.ml.d
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -27-26-32-33 -g -bin-annot -I .lsystems.objs/byte -no-alias-deps -opaque -open Lsystems -o .lsystems.objs/byte/lsystems__Formes.cmo -c -impl formes.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -27-26-32-33 -g -I .lsystems.objs/byte -I .lsystems.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Lsystems -o .lsystems.objs/native/lsystems__Formes.cmx -c -impl formes.ml)
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl mysys.ml) > _build/default/.lsystems.objs/mysys.ml.d
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl parsing.ml) > _build/default/.lsystems.objs/parsing.ml.d
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -27-26-32-33 -g -bin-annot -I .lsystems.objs/byte -no-alias-deps -opaque -open Lsystems -o .lsystems.objs/byte/lsystems__Parsing.cmo -c -impl parsing.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -27-26-32-33 -g -I .lsystems.objs/byte -I .lsystems.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Lsystems -o .lsystems.objs/native/lsystems__Parsing.cmx -c -impl parsing.ml)
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl systems.ml) > _build/default/.lsystems.objs/systems.ml.d
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl turtle.ml) > _build/default/.lsystems.objs/turtle.ml.d
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -27-26-32-33 -g -bin-annot -I .lsystems.objs/byte -no-alias-deps -opaque -open Lsystems -o .lsystems.objs/byte/lsystems__Turtle.cmo -c -impl turtle.ml)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -27-26-32-33 -g -bin-annot -I .lsystems.objs/byte -no-alias-deps -opaque -open Lsystems -o .lsystems.objs/byte/lsystems__Mysys.cmo -c -impl mysys.ml)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -27-26-32-33 -g -bin-annot -I .lsystems.objs/byte -no-alias-deps -opaque -open Lsystems -o .lsystems.objs/byte/lsystems__Systems.cmo -c -impl systems.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -27-26-32-33 -g -I .lsystems.objs/byte -I .lsystems.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Lsystems -o .lsystems.objs/native/lsystems__Systems.cmx -c -impl systems.ml)
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl main.ml) > _build/default/.main.eobjs/main.ml.d
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -27-26-32-33 -g -I .lsystems.objs/byte -I .lsystems.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Lsystems -o .lsystems.objs/native/lsystems__Turtle.cmx -c -impl turtle.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -27-26-32-33 -g -I .lsystems.objs/byte -I .lsystems.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Lsystems -o .lsystems.objs/native/lsystems__Mysys.cmx -c -impl mysys.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -27-26-32-33 -g -a -o lsystems.cmxa .lsystems.objs/native/lsystems.cmx .lsystems.objs/native/lsystems__Formes.cmx .lsystems.objs/native/lsystems__Turtle.cmx .lsystems.objs/native/lsystems__Mysys.cmx .lsystems.objs/native/lsystems__Systems.cmx .lsystems.objs/native/lsystems__Parsing.cmx)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -27-26-32-33 -g -bin-annot -I .main.eobjs/byte -I .lsystems.objs/byte -I .lsystems.objs/native -no-alias-deps -opaque -o .main.eobjs/byte/main.cmo -c -impl main.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -27-26-32-33 -g -I .main.eobjs/byte -I .main.eobjs/native -I .lsystems.objs/byte -I .lsystems.objs/native -intf-suffix .ml -no-alias-deps -opaque -o .main.eobjs/native/main.cmx -c -impl main.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -27-26-32-33 -g -o main.exe /usr/lib/ocaml/graphics.cmxa -I /usr/lib/ocaml lsystems.cmxa .main.eobjs/native/main.cmx)
